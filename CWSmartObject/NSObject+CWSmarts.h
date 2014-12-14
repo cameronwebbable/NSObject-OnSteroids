@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject ()
+@interface NSObject (CWSmarts)
 //Takes given dictionary and returns a new object with mapped properties
 -(instancetype) initObjectWithDictionary:(NSDictionary *) dictionary;
 

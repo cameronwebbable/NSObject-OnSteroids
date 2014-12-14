@@ -12,6 +12,8 @@
 		40DB4C471A3B7AFE002B7567 /* CWSmartObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB4C461A3B7AFE002B7567 /* CWSmartObjectTests.m */; };
 		40DB4C521A3B7B51002B7567 /* NSObject+CWSmarts.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */; };
 		40DB4C531A3B7B51002B7567 /* NSObject+CWSmarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB4C511A3B7B51002B7567 /* NSObject+CWSmarts.m */; };
+		40FA31771A3E0277005B6D77 /* CWObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 40FA31751A3E0277005B6D77 /* CWObjectUtil.h */; };
+		40FA31781A3E0277005B6D77 /* CWObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FA31761A3E0277005B6D77 /* CWObjectUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		40DB4C461A3B7AFE002B7567 /* CWSmartObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWSmartObjectTests.m; sourceTree = "<group>"; };
 		40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CWSmarts.h"; sourceTree = "<group>"; };
 		40DB4C511A3B7B51002B7567 /* NSObject+CWSmarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CWSmarts.m"; sourceTree = "<group>"; };
+		40FA31751A3E0277005B6D77 /* CWObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWObjectUtil.h; sourceTree = "<group>"; };
+		40FA31761A3E0277005B6D77 /* CWObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWObjectUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				40DB4C371A3B7AFE002B7567 /* Supporting Files */,
 				40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */,
 				40DB4C511A3B7B51002B7567 /* NSObject+CWSmarts.m */,
+				40FA31751A3E0277005B6D77 /* CWObjectUtil.h */,
+				40FA31761A3E0277005B6D77 /* CWObjectUtil.m */,
 			);
 			path = CWSmartObject;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DB4C521A3B7B51002B7567 /* NSObject+CWSmarts.h in Headers */,
+				40FA31771A3E0277005B6D77 /* CWObjectUtil.h in Headers */,
 				40DB4C3A1A3B7AFE002B7567 /* CWSmartObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40FA31781A3E0277005B6D77 /* CWObjectUtil.m in Sources */,
 				40DB4C531A3B7B51002B7567 /* NSObject+CWSmarts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +410,7 @@
 				40DB4C4C1A3B7AFE002B7567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40DB4C4D1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "CWSmartObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +419,7 @@
 				40DB4C4F1A3B7AFE002B7567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
