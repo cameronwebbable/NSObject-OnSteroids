@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CWSmartObject"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Allows you to create objects from dictionaries and just handles a bunch of other annoying tasks. Inspired by code in Sqwiggle for iOS SDK."
 
   s.homepage     = "https://github.com/cameronwebbable/CWSmartObject"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/cameronwebbable/CWSmartObject.git", :commit => "0eba6b40ca29caaf09186f769dfabe00422b7e6a", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/cameronwebbable/CWSmartObject.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
