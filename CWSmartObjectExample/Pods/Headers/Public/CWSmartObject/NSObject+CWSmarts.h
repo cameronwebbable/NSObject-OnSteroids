@@ -1,0 +1,1 @@
+../../../CWSmartObject/CWSmartObject/NSObject+CWSmarts.h

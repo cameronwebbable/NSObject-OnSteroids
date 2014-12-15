@@ -1,0 +1,10 @@
+PODS:
+  - CWSmartObject (0.0.3)
+
+DEPENDENCIES:
+  - CWSmartObject
+
+SPEC CHECKSUMS:
+  CWSmartObject: 9999db385f94fb5d3bb7e7e89a3dd7d0b16a598d
+
+COCOAPODS: 0.35.0
