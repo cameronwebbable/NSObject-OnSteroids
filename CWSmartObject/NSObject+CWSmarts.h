@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CWObjectUtil.h"
 
 @interface NSObject (CWSmarts)
 //Takes given dictionary and returns a new object with mapped properties

@@ -26,11 +26,49 @@
     return self;
 }
 
+//Short-hand init
++(instancetype) objectWithDictionary:(NSDictionary *)dictionary
+{
+    return [[[self class] alloc] initObjectWithDictionary:dictionary];
+}
+
+-(instancetype) mapObject:(id)object withValues:(NSDictionary *)dictionary
+{
+    NSDictionary *modelDefinition = [self modelDefinition];
+    
+    for (NSString *key in modelDefinition)
+    {
+        // Validate incoming object. NSNull objects should not be stored.
+        id incomingObject = [dictionary valueForKeyPath:modelDefinition[key]];
+        if ([CWObjectUtil isValidObject:incomingObject])
+            [object setValue:incomingObject forKey:key];
+    };
+    
+    return object;
+}
+
 #pragma mark Override SQObjectMethods
 -(NSDictionary *) modelDefinition
 {
     NSAssert(NO, @"Subclasses need to overwrite model definition in order to make use of CWSmartObject additions");
     return @{};
+}
+
+#pragma mark Dictionary output of object
+-(NSDictionary *) dictionaryFormat
+{
+    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    
+    NSDictionary *modelDefinition = [self modelDefinition];
+
+    for (NSString *key in modelDefinition)
+    {
+        //Not gonna map item if it's null
+        if([self valueForKeyPath:key])
+            [dictionary setObject:[self valueForKeyPath:key] forKey:modelDefinition[key]];
+    }
+    
+    return dictionary;
 }
 
 #pragma mark NSObject methods for storage/etc

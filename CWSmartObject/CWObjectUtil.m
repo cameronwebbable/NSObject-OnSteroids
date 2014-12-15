@@ -34,20 +34,29 @@
     return NO;
 }
 
-
-+ (NSDate*)dateWithString:(NSString*)dateString withFormat:(NSString *)format
++(NSDate *) dateWithString:(NSString *)dateString
 {
-    NSDate *date = [[self dateFormatter] dateFromString:dateString withFormat:format];
+    return [[self dateFormatter] dateFromString:dateString];
+}
+
++ (NSDate*)dateWithString:(NSString*)dateString format:(NSString *)format
+{
+    NSDate *date = [[self dateFormatterFromString:format] dateFromString:dateString];
     return date;
 }
 
 + (NSDateFormatter *)dateFormatter
 {
-    [self dateFormatterFromString:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+    return [self dateFormatterFromString:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
 }
 
-+ (NSDateFormatter *)dateFormatterFromString:(NSString *)forma
++ (NSDateFormatter *)dateFormatterFromString:(NSString *)format
 {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    //TODO: eventually surface a way to set timezone. For now, just assume UTC by default.
+    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     
+    return formatter;
 }
 @end
