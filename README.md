@@ -5,7 +5,7 @@ Allows you to create objects from dictionaries and just handles a bunch of other
 
 How to Install
 --------------
-Add <code>pod 'CWSmartObject'</code> to your podfile, then import <code><CWSmartObject/CWSmartObject.h></code>.
+Add <code>pod 'CWSmartObject'</code> to your podfile, then import <code>\<CWSmartObject/CWSmartObject.h\></code>.
 
 ToDo: 
 -----
