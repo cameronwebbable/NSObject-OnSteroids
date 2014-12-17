@@ -15,7 +15,7 @@ Add <code>pod 'CWSmartObject'</code> to your podfile, then import <code>\<CWSmar
 
 How to Use
 -----------
-- Create a new class that you'd like to map to from an API. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
+- Create a new class that you'd like to map to. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
 
 ``` objc
 //Book.h
