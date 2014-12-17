@@ -11,7 +11,7 @@ Benefits
 
 How to Install
 --------------
-Add <code>pod 'CWSmartObject'</code> to your podfile, then import <code>\<CWSmartObject/CWSmartObject.h\></code>. Sample code is available under subdirectory "CWSmartObjectExample".
+Add <code class="language-objc">pod 'CWSmartObject'</code> to your podfile, then import <code class="language-objc">\<CWSmartObject/CWSmartObject.h\></code>. Sample code is available under subdirectory "CWSmartObjectExample".
 
 How to Use
 -----------
@@ -51,7 +51,7 @@ You might be wondering... "WTF IS THAT MODEL DEFINITION CRAP?". It's a method yo
 {"iOS Class Property" : "Dictionary KeyPath"}
 ```
 
-Also make note of <code>@"dictKey.importantDictionary"</code>. If the concept of KeyValuePath is fuzzy for you, basically adding the "." allows you to traverse a dictionary to get any childern. In this case, <code>@"dictKey.importantDictionary"<\code> implies that the object being passed through here will look like <code>@{@"dictKey": @{@"importantDictionary" : @{@"blah" : @"blah"}}}</code>
+Also make note of <code class="language-objc">@"dictKey.importantDictionary"</code>. If the concept of KeyValuePath is fuzzy for you, basically adding the "." allows you to traverse a dictionary to get any childern. In this case, <code>@"dictKey.importantDictionary"<\code> implies that the object being passed through here will look like <code class="language-objc">@{@"dictKey": @{@"importantDictionary" : @{@"blah" : @"blah"}}}</code>
 
 - Now that we have the object all handled, let's go ahead and import <code>Book.h</code> elsewhere and initialize a Book object:
 
