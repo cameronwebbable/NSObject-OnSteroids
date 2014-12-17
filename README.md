@@ -17,7 +17,7 @@ How to Use
 -----------
 Create a new class that you'd like to map to. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
 
-Objective-C
+** Objective-C ** 
 ``` objc
 //Book.h
 
@@ -46,7 +46,7 @@ Objective-C
 @end
 ```
 
-Swift (note: objects have to inheret NSObject. Sorry :-/. I'll update this later)
+** Swift (note: objects have to inheret NSObject. Sorry :-/. I'll update this later) **
 ``` obj-c
 //Objective-C Bridging Header
 ...
@@ -73,7 +73,7 @@ Also make note of <code class="language-objc">@"dictKey.importantDictionary"</co
 
 Now that we have the object all handled, let's go ahead and import <code>Book.h</code> elsewhere and initialize a Book object:
 
-Objective-C
+** Objective-C **
 ``` objc
 //SomeOtherClass.m
 #import "Book.h"
@@ -87,7 +87,7 @@ NSLog(@"Book Dictionary %@", book.someDictionary);
 
 ```
 
-Swift 
+** Swift ** 
 ``` swift
 //SomeOtherClass.swift
 import Book
@@ -106,13 +106,13 @@ As you can now see, the given object has been mapped appropriately to each respe
 
 Let's say I want to be able to get a dictionary format of the object I've just created. Simply do:
 
-Objective-C
+** Objective-C ** 
 ``` objc
 [book dictionaryFormat];
 
 ```
 
-Swift
+** Swift **
 ``` swift
 book.dictionaryFormat()
 
