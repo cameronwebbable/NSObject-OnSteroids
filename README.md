@@ -15,7 +15,7 @@ Add <code class="language-objc">pod 'CWSmartObject'</code> to your podfile, then
 
 How to Use
 -----------
-- Create a new class that you'd like to map to. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
+Create a new class that you'd like to map to. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
 
 ``` objc
 //Book.h
@@ -53,7 +53,7 @@ You might be wondering... "WTF IS THAT MODEL DEFINITION CRAP?". It's a method yo
 
 Also make note of <code class="language-objc">@"dictKey.importantDictionary"</code>. If the concept of KeyValuePath is fuzzy for you, basically adding the "." allows you to traverse a dictionary to get any childern. In this case, <code>@"dictKey.importantDictionary"<\code> implies that the object being passed through here will look like <code class="language-objc">@{@"dictKey": @{@"importantDictionary" : @{@"blah" : @"blah"}}}</code>
 
-- Now that we have the object all handled, let's go ahead and import <code>Book.h</code> elsewhere and initialize a Book object:
+Now that we have the object all handled, let's go ahead and import <code>Book.h</code> elsewhere and initialize a Book object:
 
 ``` objc
 //SomeOtherClass.m
