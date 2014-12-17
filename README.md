@@ -5,8 +5,8 @@ Allows you to create objects from dictionaries and just handles a bunch of other
 
 Benefits
 --------
-- Rapidly map dictionary to object (helpful for dealing with dictionaries from API)
-- Export object to dictionary (helpful for when you are needed to post object to API)
+- Rapidly map dictionary to object (helpful for dealing with dictionaries from REST APIs)
+- Export object to dictionary (helpful for when you are needed to post object to Rest APIs)
 - Encoding/Decoding for Coder baked right in.
 
 How to Install
@@ -68,8 +68,29 @@ NSLog(@"Book Dictionary %@", book.someDictionary);
 
 ```
 
-As you can now see, the given object has been mapped appropriately to each respective object. SWEET. Obviously my example is very basic, but as we can see this type of thing will be very handy rapidly creating new objects for use in reading in data/dictionaries from APIs. 
+As you can now see, the given object has been mapped appropriately to each respective object. SWEET. 
 
+- Let's say I want to be able to get a dictionary format of the object I've just created. Simply do:
+
+``` objc
+[book dictionaryFormat];
+
+```
+
+And you will be returned a dictionary of all properties and their respective values:
+
+``` objc
+{
+    dictKey = {"importantDictionary" : {"blah" : "hah"}};
+    title = "How Now Brown Cow";
+}
+```
+
+Sweet Jesus! Effectively removes the need for you to write any code to create a nicely formatted dictionary for posting, because it already knows what fields your API is using! 
+
+Feedback?
+--------------
+- Open a GH Issue. Happy to discuss questions. This is still quite early and there's a number of other ways I could go. 
 
 ToDo: 
 -----
