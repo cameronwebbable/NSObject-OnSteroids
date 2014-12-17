@@ -17,6 +17,7 @@ How to Use
 -----------
 Create a new class that you'd like to map to. For this example, I'm going to create an object called "Book", and use the following code in .h and .m files, respectively:
 
+Objective-C
 ``` objc
 //Book.h
 
@@ -45,16 +46,33 @@ Create a new class that you'd like to map to. For this example, I'm going to cre
 @end
 ```
 
+Swift (note: objects have to inheret NSObject. Sorry :-/. I'll update this later)
+``` obj-c
+//Objective-C Bridging Header
+...
+#import <CWSmartObject/CWSmartObject.h>
+```
+
+``` swift
+//Book.swift
+class Book : NSObject {
+    ... 
+    override func modelDefinition() -> [NSObject : AnyObject]! {
+        return ["title" : "title", "someDictionary" : "dictKey.importDictionary"]
+    }
+}
+```
+
 You might be wondering... "WTF IS THAT MODEL DEFINITION CRAP?". It's a method you need to override in this object so it knows which keys map to what property.  The format for modelDefinition is 
 
 ``` objc
 {"iOS Class Property" : "Dictionary KeyPath"}
 ```
 
-Also make note of <code class="language-objc">@"dictKey.importantDictionary"</code>. If the concept of KeyValuePath is fuzzy for you, basically adding the "." allows you to traverse a dictionary to get any childern. In this case, <code>@"dictKey.importantDictionary"</code> implies that the object being passed through here will look like <code class="language-objc">@{@"dictKey": @{@"importantDictionary" : @{@"blah" : @"blah"}}}</code>
+Also make note of <code class="language-objc">@"dictKey.importantDictionary"</code>. If the concept of KeyValuePath is fuzzy for you, basically adding the "." allows you to traverse a dictionary to get any childern. In this case, <code>@"dictKey.importantDictionary"</code> implies that the object being passed through here will look like <code class="language-objc">{dictKey": {"importantDictionary" : {"blah" : "blah"}}}</code>
 
 Now that we have the object all handled, let's go ahead and import <code>Book.h</code> elsewhere and initialize a Book object:
-
+Objective-C
 ``` objc
 //SomeOtherClass.m
 #import "Book.h"
@@ -68,12 +86,34 @@ NSLog(@"Book Dictionary %@", book.someDictionary);
 
 ```
 
+Swift 
+``` swift
+//SomeOtherClass.swift
+import Book
+
+...
+
+var Book : Book = Book(dictionary: ["title": "How Now Brown Cow", "dictKey" : ["importantDictionary" : ["blah" : "blah"]]])
+
+println("Book Object: \(book)")
+println("Book Title: \(book.title)")
+println("Book Dictionary: \(book.someDictionary)")
+
+```
+
 As you can now see, the given object has been mapped appropriately to each respective object. SWEET. 
 
-- Let's say I want to be able to get a dictionary format of the object I've just created. Simply do:
+Let's say I want to be able to get a dictionary format of the object I've just created. Simply do:
 
+Objective-C
 ``` objc
 [book dictionaryFormat];
+
+```
+
+Swift
+``` swift
+book.dictionaryFormat()
 
 ```
 
@@ -90,7 +130,7 @@ Sweet Jesus! Effectively removes the need for you to write any code to create a 
 
 Feedback?
 --------------
-- Open a GH Issue. Happy to discuss questions. This is still quite early and there's a number of other ways I could go. 
+Open a GH Issue. Happy to discuss questions. This is still quite early and there's a number of other ways I could go. 
 
 ToDo: 
 -----
