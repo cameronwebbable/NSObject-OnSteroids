@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char CWSmartObjectVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CWSmartObject/PublicHeader.h>
 
-#import <CWSmartObject/NSObject+CWSmarts.h>
+#import <NSObjectOnSteroids/NSObject+CWSmarts.h>
