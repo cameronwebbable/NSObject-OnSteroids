@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "NSObject-OnSteroids", "NSObject-OnSteroids/**/*.{h,m}"
+  s.source_files  = "NSObjectOnSteroids", "NSObjectOnSteroids/**/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
