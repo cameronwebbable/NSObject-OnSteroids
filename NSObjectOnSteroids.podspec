@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "CWSmartObject"
-  s.version      = "0.0.3"
+  s.name         = "NSObject-OnSteroids"
+  s.version      = "0.0.4"
   s.summary      = "Allows you to create objects from dictionaries and just handles a bunch of other annoying tasks. Inspired by code in Sqwiggle for iOS SDK."
 
-  s.homepage     = "https://github.com/cameronwebbable/CWSmartObject"
+  s.homepage     = "https://github.com/cameronwebbable/NSObject-OnSteroids"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/cameronwebbable/CWSmartObject.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/cameronwebbable/NSObject-OnSteroids.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CWSmartObject", "CWSmartObject/**/*.{h,m}"
+  s.source_files  = "NSObject-OnSteroids", "NSObject-OnSteroids/**/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
