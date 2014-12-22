@@ -1,7 +1,7 @@
-CWSmartObject
+NSObject-OnSteroids
 =============
 
-Allows you to create objects from dictionaries and just handles a bunch of other annoying tasks. Inspired by code that I wrote while still at Sqwiggle. CWSmartObject is derieved from [SQObject.{h,m} in the Sqwiggle iOS SDK](https://github.com/sqwiggle/sqwiggle-ios-sdk/blob/master/iOSSDK/SQObject.h)
+Allows you to create objects from dictionaries and just handles a bunch of other annoying tasks. Inspired by code that I wrote while still at Sqwiggle. NSObject-OnSteroids is derieved from [SQObject.{h,m} in the Sqwiggle iOS SDK](https://github.com/sqwiggle/sqwiggle-ios-sdk/blob/master/iOSSDK/SQObject.h)
 
 Benefits
 --------
@@ -11,7 +11,7 @@ Benefits
 
 How to Install
 --------------
-Add <code class="language-objc">pod 'CWSmartObject'</code> to your podfile, then import <code class="language-objc">\<CWSmartObject/CWSmartObject.h\></code>. Sample code is available under subdirectory "CWSmartObjectExample".
+Add <code class="language-objc">pod 'NSObject-OnSteroids'</code> to your podfile, then import <code class="language-objc">\<NSObject-OnSteroids/NSObject-OnSteroidsc.h\></code>. Sample code is available under subdirectory "NSObject-OnSteroidsExample".
 
 How to Use
 -----------
@@ -21,7 +21,7 @@ Create a new class that you'd like to map to. For this example, I'm going to cre
 ``` objc
 //Book.h
 
-#import <CWSmartObject/CWSmartObject.h>
+#import <NSObject-OnSteroids/NSObject-OnSteroids.h>
 
 @interface Book : NSObject
 
@@ -50,7 +50,7 @@ Create a new class that you'd like to map to. For this example, I'm going to cre
 ``` obj-c
 //Objective-C Bridging Header
 ...
-#import <CWSmartObject/CWSmartObject.h>
+#import <NSObject-OnSteroids/NSObject-OnSteroids.h>
 ```
 
 ``` swift
