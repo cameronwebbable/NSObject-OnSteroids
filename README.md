@@ -11,7 +11,7 @@ Benefits
 
 How to Install
 --------------
-Add <code class="language-objc">pod 'NSObject-OnSteroids'</code> to your podfile, then import <code class="language-objc">\<NSObject-OnSteroids/NSObject-OnSteroidsc.h\></code>. Sample code is available under subdirectory "NSObject-OnSteroidsExample".
+Add <code class="language-objc">pod 'NSObject-OnSteroids'</code> to your podfile, then import <code class="language-objc">\<NSObject-OnSteroids/NSObject-OnSteroids.h\></code>. Sample code is available under subdirectory "NSObject-OnSteroidsExample".
 
 How to Use
 -----------
