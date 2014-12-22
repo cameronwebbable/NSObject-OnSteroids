@@ -6,9 +6,9 @@
 // project.
 
 
-// CWSmartObject
-#define COCOAPODS_POD_AVAILABLE_CWSmartObject
-#define COCOAPODS_VERSION_MAJOR_CWSmartObject 0
-#define COCOAPODS_VERSION_MINOR_CWSmartObject 0
-#define COCOAPODS_VERSION_PATCH_CWSmartObject 3
+// NSObject-OnSteroids
+#define COCOAPODS_POD_AVAILABLE_NSObject_OnSteroids
+#define COCOAPODS_VERSION_MAJOR_NSObject_OnSteroids 0
+#define COCOAPODS_VERSION_MINOR_NSObject_OnSteroids 0
+#define COCOAPODS_VERSION_PATCH_NSObject_OnSteroids 4
 

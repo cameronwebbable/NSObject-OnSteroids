@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Cameron Webb. All rights reserved.
 //
 
-#import <CWSmartObject/CWSmartObject.h>
+#import <NSObject-OnSteroids/NSObject-OnSteroids.h>
 
 @interface CWPerson : NSObject
 
