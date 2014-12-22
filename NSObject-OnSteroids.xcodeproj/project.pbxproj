@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40DB4C3A1A3B7AFE002B7567 /* CWSmartObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB4C391A3B7AFE002B7567 /* CWSmartObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40DB4C401A3B7AFE002B7567 /* CWSmartObject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB4C341A3B7AFE002B7567 /* CWSmartObject.framework */; };
+		40DB4C3A1A3B7AFE002B7567 /* NSObject-OnSteroids.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB4C391A3B7AFE002B7567 /* NSObject-OnSteroids.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DB4C401A3B7AFE002B7567 /* NSObject_OnSteroids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB4C341A3B7AFE002B7567 /* NSObject_OnSteroids.framework */; };
 		40DB4C471A3B7AFE002B7567 /* CWSmartObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB4C461A3B7AFE002B7567 /* CWSmartObjectTests.m */; };
 		40DB4C521A3B7B51002B7567 /* NSObject+CWSmarts.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */; };
 		40DB4C531A3B7B51002B7567 /* NSObject+CWSmarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB4C511A3B7B51002B7567 /* NSObject+CWSmarts.m */; };
@@ -27,10 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		40DB4C341A3B7AFE002B7567 /* CWSmartObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CWSmartObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB4C341A3B7AFE002B7567 /* NSObject_OnSteroids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSObject_OnSteroids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB4C381A3B7AFE002B7567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40DB4C391A3B7AFE002B7567 /* CWSmartObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWSmartObject.h; sourceTree = "<group>"; };
-		40DB4C3F1A3B7AFE002B7567 /* CWSmartObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWSmartObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB4C391A3B7AFE002B7567 /* NSObject-OnSteroids.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject-OnSteroids.h"; sourceTree = "<group>"; };
+		40DB4C3F1A3B7AFE002B7567 /* NSObject-OnSteroidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSObject-OnSteroidsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB4C451A3B7AFE002B7567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40DB4C461A3B7AFE002B7567 /* CWSmartObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWSmartObjectTests.m; sourceTree = "<group>"; };
 		40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CWSmarts.h"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DB4C401A3B7AFE002B7567 /* CWSmartObject.framework in Frameworks */,
+				40DB4C401A3B7AFE002B7567 /* NSObject_OnSteroids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 		40DB4C2A1A3B7AFE002B7567 = {
 			isa = PBXGroup;
 			children = (
-				40DB4C361A3B7AFE002B7567 /* CWSmartObject */,
+				40DB4C361A3B7AFE002B7567 /* NSObject-OnSteroids */,
 				40DB4C431A3B7AFE002B7567 /* CWSmartObjectTests */,
 				40DB4C351A3B7AFE002B7567 /* Products */,
 			);
@@ -70,22 +70,23 @@
 		40DB4C351A3B7AFE002B7567 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40DB4C341A3B7AFE002B7567 /* CWSmartObject.framework */,
-				40DB4C3F1A3B7AFE002B7567 /* CWSmartObjectTests.xctest */,
+				40DB4C341A3B7AFE002B7567 /* NSObject_OnSteroids.framework */,
+				40DB4C3F1A3B7AFE002B7567 /* NSObject-OnSteroidsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		40DB4C361A3B7AFE002B7567 /* CWSmartObject */ = {
+		40DB4C361A3B7AFE002B7567 /* NSObject-OnSteroids */ = {
 			isa = PBXGroup;
 			children = (
-				40DB4C391A3B7AFE002B7567 /* CWSmartObject.h */,
+				40DB4C391A3B7AFE002B7567 /* NSObject-OnSteroids.h */,
 				40DB4C371A3B7AFE002B7567 /* Supporting Files */,
 				40DB4C501A3B7B51002B7567 /* NSObject+CWSmarts.h */,
 				40DB4C511A3B7B51002B7567 /* NSObject+CWSmarts.m */,
 				40FA31751A3E0277005B6D77 /* CWObjectUtil.h */,
 				40FA31761A3E0277005B6D77 /* CWObjectUtil.m */,
 			);
+			name = "NSObject-OnSteroids";
 			path = CWSmartObject;
 			sourceTree = "<group>";
 		};
@@ -123,16 +124,16 @@
 			files = (
 				40DB4C521A3B7B51002B7567 /* NSObject+CWSmarts.h in Headers */,
 				40FA31771A3E0277005B6D77 /* CWObjectUtil.h in Headers */,
-				40DB4C3A1A3B7AFE002B7567 /* CWSmartObject.h in Headers */,
+				40DB4C3A1A3B7AFE002B7567 /* NSObject-OnSteroids.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		40DB4C331A3B7AFE002B7567 /* CWSmartObject */ = {
+		40DB4C331A3B7AFE002B7567 /* NSObject-OnSteroids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40DB4C4A1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "CWSmartObject" */;
+			buildConfigurationList = 40DB4C4A1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "NSObject-OnSteroids" */;
 			buildPhases = (
 				40DB4C2F1A3B7AFE002B7567 /* Sources */,
 				40DB4C301A3B7AFE002B7567 /* Frameworks */,
@@ -143,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = CWSmartObject;
+			name = "NSObject-OnSteroids";
 			productName = CWSmartObject;
-			productReference = 40DB4C341A3B7AFE002B7567 /* CWSmartObject.framework */;
+			productReference = 40DB4C341A3B7AFE002B7567 /* NSObject_OnSteroids.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		40DB4C3E1A3B7AFE002B7567 /* CWSmartObjectTests */ = {
+		40DB4C3E1A3B7AFE002B7567 /* NSObject-OnSteroidsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40DB4C4D1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "CWSmartObjectTests" */;
+			buildConfigurationList = 40DB4C4D1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "NSObject-OnSteroidsTests" */;
 			buildPhases = (
 				40DB4C3B1A3B7AFE002B7567 /* Sources */,
 				40DB4C3C1A3B7AFE002B7567 /* Frameworks */,
@@ -161,9 +162,9 @@
 			dependencies = (
 				40DB4C421A3B7AFE002B7567 /* PBXTargetDependency */,
 			);
-			name = CWSmartObjectTests;
+			name = "NSObject-OnSteroidsTests";
 			productName = CWSmartObjectTests;
-			productReference = 40DB4C3F1A3B7AFE002B7567 /* CWSmartObjectTests.xctest */;
+			productReference = 40DB4C3F1A3B7AFE002B7567 /* NSObject-OnSteroidsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +184,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40DB4C2E1A3B7AFE002B7567 /* Build configuration list for PBXProject "CWSmartObject" */;
+			buildConfigurationList = 40DB4C2E1A3B7AFE002B7567 /* Build configuration list for PBXProject "NSObject-OnSteroids" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40DB4C331A3B7AFE002B7567 /* CWSmartObject */,
-				40DB4C3E1A3B7AFE002B7567 /* CWSmartObjectTests */,
+				40DB4C331A3B7AFE002B7567 /* NSObject-OnSteroids */,
+				40DB4C3E1A3B7AFE002B7567 /* NSObject-OnSteroidsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,7 +242,7 @@
 /* Begin PBXTargetDependency section */
 		40DB4C421A3B7AFE002B7567 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40DB4C331A3B7AFE002B7567 /* CWSmartObject */;
+			target = 40DB4C331A3B7AFE002B7567 /* NSObject-OnSteroids */;
 			targetProxy = 40DB4C411A3B7AFE002B7567 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,7 +342,7 @@
 				INFOPLIST_FILE = CWSmartObject/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NSObject_OnSteroids;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -356,7 +357,7 @@
 				INFOPLIST_FILE = CWSmartObject/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NSObject_OnSteroids;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -374,7 +375,7 @@
 				);
 				INFOPLIST_FILE = CWSmartObjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NSObject-OnSteroidsTests";
 			};
 			name = Debug;
 		};
@@ -387,14 +388,14 @@
 				);
 				INFOPLIST_FILE = CWSmartObjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NSObject-OnSteroidsTests";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40DB4C2E1A3B7AFE002B7567 /* Build configuration list for PBXProject "CWSmartObject" */ = {
+		40DB4C2E1A3B7AFE002B7567 /* Build configuration list for PBXProject "NSObject-OnSteroids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40DB4C481A3B7AFE002B7567 /* Debug */,
@@ -403,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40DB4C4A1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "CWSmartObject" */ = {
+		40DB4C4A1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "NSObject-OnSteroids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40DB4C4B1A3B7AFE002B7567 /* Debug */,
@@ -412,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40DB4C4D1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "CWSmartObjectTests" */ = {
+		40DB4C4D1A3B7AFE002B7567 /* Build configuration list for PBXNativeTarget "NSObject-OnSteroidsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40DB4C4E1A3B7AFE002B7567 /* Debug */,

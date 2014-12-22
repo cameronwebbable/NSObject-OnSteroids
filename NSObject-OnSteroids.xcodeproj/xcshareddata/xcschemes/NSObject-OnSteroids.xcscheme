@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40DB4C331A3B7AFE002B7567"
-               BuildableName = "CWSmartObject.framework"
-               BlueprintName = "CWSmartObject"
-               ReferencedContainer = "container:CWSmartObject.xcodeproj">
+               BuildableName = "NSObject-OnSteroids.framework"
+               BlueprintName = "NSObject-OnSteroids"
+               ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40DB4C3E1A3B7AFE002B7567"
-               BuildableName = "CWSmartObjectTests.xctest"
-               BlueprintName = "CWSmartObjectTests"
-               ReferencedContainer = "container:CWSmartObject.xcodeproj">
+               BuildableName = "NSObject-OnSteroidsTests.xctest"
+               BlueprintName = "NSObject-OnSteroidsTests"
+               ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40DB4C3E1A3B7AFE002B7567"
-               BuildableName = "CWSmartObjectTests.xctest"
-               BlueprintName = "CWSmartObjectTests"
-               ReferencedContainer = "container:CWSmartObject.xcodeproj">
+               BuildableName = "NSObject-OnSteroidsTests.xctest"
+               BlueprintName = "NSObject-OnSteroidsTests"
+               ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40DB4C331A3B7AFE002B7567"
-            BuildableName = "CWSmartObject.framework"
-            BlueprintName = "CWSmartObject"
-            ReferencedContainer = "container:CWSmartObject.xcodeproj">
+            BuildableName = "NSObject-OnSteroids.framework"
+            BlueprintName = "NSObject-OnSteroids"
+            ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40DB4C331A3B7AFE002B7567"
-            BuildableName = "CWSmartObject.framework"
-            BlueprintName = "CWSmartObject"
-            ReferencedContainer = "container:CWSmartObject.xcodeproj">
+            BuildableName = "NSObject-OnSteroids.framework"
+            BlueprintName = "NSObject-OnSteroids"
+            ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40DB4C331A3B7AFE002B7567"
-            BuildableName = "CWSmartObject.framework"
-            BlueprintName = "CWSmartObject"
-            ReferencedContainer = "container:CWSmartObject.xcodeproj">
+            BuildableName = "NSObject-OnSteroids.framework"
+            BlueprintName = "NSObject-OnSteroids"
+            ReferencedContainer = "container:NSObject-OnSteroids.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

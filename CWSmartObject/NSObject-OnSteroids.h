@@ -1,6 +1,5 @@
 //
-//  CWSmartObject.h
-//  CWSmartObject
+//  NSObject-OnSteroids
 //
 //  Created by Cameron Webb on 12/12/14.
 //  Copyright (c) 2014 Cameron Webb. All rights reserved.
