@@ -88,9 +88,9 @@
     if (self != nil)
     {
         NSDictionary *stored = [coder decodeObjectForKey:NSStringFromClass([self class])];
-        [[self modelDefinition] each:^(id key, id value) {
+        for (NSString *key in [self modelDefinition]) {
             [self setValue:[stored objectForKey:key] forKey:key];
-        }];
+        }
     }
     return self;
 }
@@ -98,9 +98,9 @@
 #pragma mark SQObject Description method
 - (NSString *) description {
     __block NSString *desc = @"";
-    [[self modelDefinition] each:^(id key, id value) {
+    for (NSString *key in [self modelDefinition]) {
         desc = [NSString stringWithFormat:@"%@%@: %@\n", desc, key, [self valueForKey:key]];
-    }];
+    }
     return desc;
 }
 
