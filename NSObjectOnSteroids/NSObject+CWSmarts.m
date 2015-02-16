@@ -82,6 +82,26 @@
     }
     [coder encodeObject:encodeDictionary forKey:NSStringFromClass([self class])];
 }
-    
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [[[self class] alloc] init];
+    if (self != nil)
+    {
+        NSDictionary *stored = [coder decodeObjectForKey:NSStringFromClass([self class])];
+        [[self modelDefinition] each:^(id key, id value) {
+            [self setValue:[stored objectForKey:key] forKey:key];
+        }];
+    }
+    return self;
+}
+
+#pragma mark SQObject Description method
+- (NSString *) description {
+    __block NSString *desc = @"";
+    [[self modelDefinition] each:^(id key, id value) {
+        desc = [NSString stringWithFormat:@"%@%@: %@\n", desc, key, [self valueForKey:key]];
+    }];
+    return desc;
+}
 
 @end
