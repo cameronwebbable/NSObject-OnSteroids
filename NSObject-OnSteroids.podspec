@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NSObject-OnSteroids"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Allows you to create objects from dictionaries and just handles a bunch of other annoying tasks. Inspired by code in Sqwiggle for iOS SDK."
 
   s.homepage     = "https://github.com/cameronwebbable/NSObject-OnSteroids"
